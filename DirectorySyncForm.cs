@@ -27,7 +27,6 @@
     sourceBrowseButton.Click += (sender, e) => BrowseFolder(sourceTextBox);
     targetBrowseButton.Click += (sender, e) => BrowseFolder(targetTextBox);
 
-    // Добавляем RadioButton для выбора формата лога
     var xmlRadio = new RadioButton { Text = "XML", Location = new Point(12, 80), Checked = true };
     var jsonRadio = new RadioButton { Text = "JSON", Location = new Point(12, 105) };
 
@@ -37,7 +36,6 @@
     this.Controls.Add(xmlRadio);
     this.Controls.Add(jsonRadio);
 
-    // Увеличиваем высоту формы
     this.Height = 180;
     syncButton.Location = new Point(118, 120);
   }
